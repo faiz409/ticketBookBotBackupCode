@@ -1,0 +1,67 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Input.ChoiceSet",
+            "choices": [
+                {
+                    "title": "Amber Fort",
+                    "value": "Amber Fort"
+                },
+                {
+                    "title": "Albert Hall",
+                    "value": "Albert Hall"
+                },
+                {
+                    "title": "City Palace",
+                    "value": "City Palace"
+                },
+                {
+                    "title": "Hawa Mahal",
+                    "value": "Hawa Mahal"
+                },
+                {
+                    "title": "Jantar Mantar",
+                    "value": "Jantar Mantar"
+                },
+                {
+                    "title": "Nahargarh Fort",
+                    "value": "Nahargarh Fort"
+                }
+            ],
+            "isRequired": true,
+            "isMultiSelect": true,
+            "label": "Select Places",
+            "placeholder": "Select Places",
+            "errorMessage": "Please select at least one place",
+            "id": "places"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "ActionSet",
+                                    "actions": [
+                                        {
+                                            "type": "Action.Submit",
+                                            "title": "Submit"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

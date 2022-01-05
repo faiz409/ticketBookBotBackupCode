@@ -1,0 +1,33 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://i1.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/11/Jaipur-Amber-Fort.jpg?w=800&ssl=1",
+                            "width": "250px",
+                            "height": "200px",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "wrap": true,
+                            "text": "Welcome to Jaipur Tour Ticket Booking",
+                            "size": "ExtraLarge",
+                            "weight": "Bolder",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
