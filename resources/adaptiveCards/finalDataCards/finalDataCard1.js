@@ -1,5 +1,5 @@
 module.exports = {
-    finalDataCard7: function(...value) {
+    finalDataCard1: function(...value) {
         return {
             type: 'AdaptiveCard',
             $schema: 'http://adaptivecards.io/schemas/adaptive-card.json',
@@ -170,12 +170,7 @@ module.exports = {
                             items: [
                                 {
                                     type: 'TextBlock',
-                                    text: `${ value[5] } :- ${ value[6] } ,
-                                    \n${ value[7] } :- ${ value[8] } ,
-                                    \n${ value[9] } :- ${ value[10] } ,
-                                    \n${ value[11] } :- ${ value[12] } ,
-                                    \n${ value[13] } :- ${ value[14] } ,
-                                    \n${ value[15] } :- ${ value[16] }`,
+                                    text: `${ value[5] } :- ${ value[6] }`,
                                     wrap: true,
                                     horizontalAlignment: 'Left'
                                 }

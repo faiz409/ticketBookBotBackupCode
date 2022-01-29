@@ -174,7 +174,8 @@ module.exports = {
                                     \n${ value[7] } :- ${ value[8] } ,
                                     \n${ value[9] } :- ${ value[10] } ,
                                     \n${ value[11] } :- ${ value[12] } ,
-                                    \n${ value[13] } :- ${ value[14] }`,
+                                    \n${ value[13] } :- ${ value[14] } ,
+                                    \n${ value[15] } :- ${ value[16] }`,
                                     wrap: true,
                                     horizontalAlignment: 'Left'
                                 }

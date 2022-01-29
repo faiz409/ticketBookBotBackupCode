@@ -5,6 +5,8 @@ const ENV_FILE = path.join(__dirname, '.env');
 dotenv.config({ path: ENV_FILE });
 
 const express = require('express');
+const Ticket = require('./router/ticketrouter');
+require('./dbs/dbs');
 const { RootDialog } = require('./componentDialogs/rootDialog');
 const { BotFrameworkAdapter, MemoryStorage, ConversationState } = require('botbuilder');
 
@@ -55,3 +57,4 @@ server.post('/api/messages', (req, res) => {
 });
 
 server.use(express.json());
+server.use('/ticket', Ticket);

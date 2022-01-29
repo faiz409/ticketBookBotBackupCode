@@ -170,8 +170,9 @@ module.exports = {
                             items: [
                                 {
                                     type: 'TextBlock',
-                                    text: `${ value[5] } :- ${ value[6] } , 
-                                    \n${ value[7] } :- ${ value[8] }`,
+                                    text: `${ value[5] } :- ${ value[6] } ,
+                                    \n${ value[7] } :- ${ value[8] } ,
+                                    \n${ value[9] } :- ${ value[10] }`,
                                     wrap: true,
                                     horizontalAlignment: 'Left'
                                 }

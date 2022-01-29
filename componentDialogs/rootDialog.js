@@ -1,6 +1,6 @@
 const { WaterfallDialog, ComponentDialog, DialogSet, DialogTurnStatus } = require('botbuilder-dialogs');
 const { TicketBookDialog } = require('./ticketBookDialog');
-// const { TicketCancelDialog } = require('./ticketCancelDialog');
+const { TicketCancelDialog } = require('./ticketCancelDialog');
 const { rootDialog, ticketBookDialog, ticketCancelDialog } = require('../constant/dialogConstant');
 const root = 'root';
 
@@ -15,6 +15,7 @@ class RootDialog extends ComponentDialog {
         ]));
 
         this.addDialog(new TicketBookDialog(conversationState));
+        this.addDialog(new TicketCancelDialog(conversationState));
         this.initialDialogId = root;
     }
 
