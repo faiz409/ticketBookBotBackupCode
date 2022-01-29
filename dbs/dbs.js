@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://FZ-faiz:faizrepo409@cluster0.vihvd.mongodb.net/ticketDatabase?retryWrites=true&w=majority';
+const uri = '';
 mongoose.connect(uri, {
     // userCreateIndex: true,
     useNewUrlParser: true,
