@@ -3,26 +3,7 @@ const ticketData = require('../models/ticket');
 
 const router = express.Router();
 
-router.get('/:id', async (req, res) => {
-    try {
-        if (req.params.id) {
-            const ticket = await ticketData.findById(req.params.id);
-            return res.json(ticket);
-        }
-    } catch (err) {
-        console.log(err);
-        if (err) {
-            return res.json({
-                errors: [
-                    {
-                        msg: 'Id is invalid please fill correct ticket Id'
-                    }
-                ]
-            });
-        }
-    }
-});
-
+// Post
 router.post('/', async (req, res) => {
     // eslint-disable-next-line new-cap
     const ticket = new ticketData({
@@ -44,6 +25,7 @@ router.post('/', async (req, res) => {
     }
 });
 
+// Get
 router.get('/', async (req, res) => {
     try {
         // console.log(req.query);
@@ -53,6 +35,30 @@ router.get('/', async (req, res) => {
         console.log(err);
     }
 });
+
+// Get by id
+
+router.get('/:id', async (req, res) => {
+    try {
+        if (req.params.id) {
+            const ticket = await ticketData.findById(req.params.id);
+            return res.json(ticket);
+        }
+    } catch (err) {
+        console.log(err);
+        if (err) {
+            return res.json({
+                errors: [
+                    {
+                        msg: 'Id is invalid please fill correct ticket Id'
+                    }
+                ]
+            });
+        }
+    }
+});
+
+// Delete by id
 
 router.delete('/:id', async (req, res) => {
     // console.log(req);
